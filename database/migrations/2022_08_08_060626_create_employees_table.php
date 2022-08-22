@@ -19,6 +19,8 @@ class CreateEmployeesTable extends Migration
             $table->enum('jeniskelamin', ['Laki-Laki', 'Perempuan']);
             $table->string('notelpon');
             $table->string('foto');
+            $table->integer('id_religions');
+            $table->date('tanggal_lahir');
             $table->timestamps();
         });
     }
